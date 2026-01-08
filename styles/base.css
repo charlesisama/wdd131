@@ -39,7 +39,7 @@ h1, h2 {
     font-family: var(--headers-font) ;  
 }
 
-main h2{
+main h3{
      background-color: var(--heading-background-color);
     color: var(--heading-text-color);
     padding: 8px;
