@@ -17,6 +17,10 @@ header, footer{
     color: var(--heading-text-color);
 }
 
+#course-title{
+    display: block;
+}
+
 nav {background-color: black;
     padding: 2px 0;
     display: flex;
