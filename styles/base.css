@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-background-color: darkblue;
+    --heading-text-color: white;
+    --image-width: 200px;
+    --image-height: auto;
+    --headers-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header, footer{
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+}
+
+nav {background-color: black;
+    padding: 2px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--heading-text-color);
+    display: block;
+    padding: 0.75rem;
+}
+
+
+h1, h2 {
+    text-align: center;
+    font-family: var(--headers-font) ;  
+}
+
+main h2{
+     background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.parent-grid{
+   display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card{
+    border: 1px solid gray;
+    border-radius: 2%;
+}
+
+.personal-info{
+    padding: 1px;
+    margin: 2px;
+}
+
+
+.country-info{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
