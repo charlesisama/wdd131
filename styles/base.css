@@ -13,7 +13,14 @@
 }
 /* HEADER AND FOOTER SECTION */
 
-header, footer{
+footer{
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header{
     background-color: var(--heading-background-color);
     color: var(--heading-text-color);
     padding: 1rem 0;
