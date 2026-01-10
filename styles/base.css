@@ -13,17 +13,11 @@
 }
 /* HEADER AND FOOTER SECTION */
 
-footer{
-    background-color: var(--heading-background-color);
-    color: var(--heading-text-color);
-    padding: 1rem 0;
-    text-align: center;
-}
 
 header{
     background-color: var(--heading-background-color);
     color: var(--heading-text-color);
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
 }
 
@@ -135,6 +129,15 @@ h4{
 
 
 /* FOOTER */
+
+footer{
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
 footer p{
     margin: .5rem 0;
     font-size: 0.9rem;
