@@ -26,7 +26,7 @@ header{
 }
 
 /* NAVIGATION SECTION */
-nav {background-color: grey;
+nav {background-color: black;
     padding: 0;
     display: flex;
     justify-content: space-around;
