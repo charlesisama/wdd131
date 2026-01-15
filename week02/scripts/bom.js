@@ -12,7 +12,7 @@ button.addEventListener("click", () =>{
         const deleteButton = document.createElement("button");
 
         li.textContent = input.value;
-        deleteButton.textContent = "❌";
+        deleteButton.textContent = "Remove Chapter❌";
 
         li.append(deleteButton);
         list.appendChild(li);
