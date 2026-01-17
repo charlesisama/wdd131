@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+:root {
+    --heading-background-color: rgb(79, 12, 142);
+    --heading-text-color: white;
+}
+
+/* SMALL VIEW (MOBILE PHONE) */
+
+header, footer{
+    background-color: var(--heading-background-color);
+}
+
+header p {
+    text-align: left;
+    font-family: times, serif;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: var(--heading-text-color);
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* Hambuger Menu */
+#menu{
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: black;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+#menu::before{
+    content: "Ξ";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+/* NAVIGATION */
+
+nav{
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--heading-text-color);
+}
+
+.navigation a:hover{
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
