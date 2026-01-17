@@ -70,6 +70,7 @@ nav {
 .navigation li a:hover {
     background: #bbb;
     color: #333;
+    border-radius: .5rem;
 }
 
 .navigation.open li a {
