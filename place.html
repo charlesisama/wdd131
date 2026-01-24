@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"  href="styles/place.css">
+    <title>Nigeria</title>
+    <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
    <header>
     <h1>Nigeria</h1>
    </header>
+
    <main>
-    <div class="bgimg">
-        <source media="(min-width: 1024px)" srcset="images/Abuja-Gate-large.webp">
-        <source media="(min-width: 600px)" srcset="images/Abuja-Gate-medium.webp">
-        <img src="images/Abuja-Gate-small.webp" alt="Abuja city gate monument" loading="lazy" width="500" height="285">
-    </div>
+        <picture class="bgimg">
+            <source media="(min-width: 800px)" srcset="images/Abuja-Gate-large.webp">
+            <source media="(min-width: 500px)" srcset="images/Abuja-Gate-medium.webp">
+            <img src="images/Abuja-Gate-small.webp" alt="Abuja city gate monument" loading="lazy" width="500" height="285">
+        </picture>
+
+
     <section class="data">
         <h2>Data</h2>
-        <ul>
-            <li>Area: </li>
-            <li>Population: </li>
-            <li>Capital: </li>
-            <li>Languages: </li>
-            <li>currency: </li>
-            <li>Time Zone: </li>
-            <li>Call code: </li>
-            <li>Internet TD: </li>
+        <ul id="data-list">
+            <li>Area:</li>
+            <li>Population:</li>
+            <li>Capital:</li>
+            <li>Languages:</li>
+            <li>Currency:</li>
+            <li>Time Zone:</li>
+            <li>Call code:</li>
+            <li>Internet TLD:</li>
         </ul>
     </section>
 
@@ -36,22 +39,20 @@
         <div class="weather-icon">
             <img src="images/weather-icon.svg" alt="weather icon" width="50" height="50">
         </div>
-        <ul>
-            <li>Temperature: </li>
-            <li>Condition: </li>
-            <li>Wind: </li>
-            <li>Wind Chill: </li>
+        <ul id="weather-list">
+            <li>Temperature:</li>
+            <li>Condition:</li>
+            <li>Wind:</li>
+            <li>Wind Chill:</li>
         </ul>
-            
     </section>
    </main>
 
    <footer>
         <p>
-            © <span id="currentyear"> </span> ✨ Charles Edache Isama✨ Nigeria 
+            © <span id="currentyear"></span> ✨ Charles Edache Isama✨ Nigeria
         </p>
         <p id="lastModified"></p>
     </footer>
-    
 </body>
 </html>
