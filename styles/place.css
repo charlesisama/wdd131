@@ -1,0 +1,42 @@
+:root {
+--header-color: #008753;
+--p-color: white;
+--body-font: Roboto, sans-serif; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: var(--body-font);
+
+}
+
+header, main, footer {
+    max-width: 640px;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+header, footer {
+    background-color: var(--header-color);
+}
+
+h1{
+    color: var(--p-color);
+    text-align: center;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+
+
+
+/* FOOTER */
+footer p {
+    margin: 0.5rem 0;
+    text-align: center;
+    color: var(--p-color);
+}
