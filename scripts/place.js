@@ -23,10 +23,13 @@ const countryData = {
 };
 
 // WEATHER DATA (STATIC for WEEK 3)
+const temperature = 30;
+const windSpeed = 12;
+
 const weatherData = {
-    temperature: "30°C",
+    temperature: `${temperature}°C`,
     condition: "Partly Cloudy",
-    wind: "12 km/h",
+    wind: `${windSpeed} km/h`,
     windChill: "N/A"
 };
 
@@ -71,3 +74,21 @@ weatherItems.forEach((li, index) => {
 });
 
 
+//==============================
+//  WINDCHILL FUNCTION
+//===============================
+
+function calculateWindChill(t, v) {
+  return 13.12 + 0.6215 * t - 11.37 * (v ** 0.16) + 0.3965 * t * (v ** 0.16);
+}
+
+let windChillText = "N/A";
+
+// Do NOT call calculateWindChill unless conditions are met (Metric)
+if (temperature <= 10 && windSpeed > 4.8) {
+  const wc = calculateWindChill(temperature, windSpeed);
+  windChillText = `${wc.toFixed(1)}°C`;
+}
+
+// Update the Wind Chill line in the existing list
+weatherItems[3].innerHTML = `<strong>Wind Chill:</strong> ${windChillText}`;
