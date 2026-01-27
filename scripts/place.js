@@ -22,7 +22,7 @@ const countryData = {
     internetTld: ".ng"
 };
 
-// WEATHER DATA (STATIC for WEEK 3)
+// WEATHER DATA 
 const temperature = 30;
 const windSpeed = 12;
 

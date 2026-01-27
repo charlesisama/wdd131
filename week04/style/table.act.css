@@ -1,0 +1,50 @@
+*{
+    --back: rgb(70, 70, 70);
+    --back2: rgb(5, 5, 5);
+    --zebra: rgb(170, 170, 170);
+    --border: rgb(30, 30, 30);
+    --forelight: white;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table{
+    margin: 2rem auto;
+    border-collapse: collapse;
+}
+
+caption{
+    caption-side: bottom;
+    color: var(--back);
+}
+
+th,td{
+    padding: 10px;
+    border: 1px solid var(--border);
+    white-space: pre;
+}
+
+thead th, tbody, td{
+    text-align: center;
+}
+
+thead{
+    color: var(--forelight);
+    background-color: var(--back);
+}
+
+
+th{
+    font-size: large;
+    padding: 1rem;
+}
+
+thead th:first-child, .black{
+    background-color: var(--back2);
+}
+
+tbody tr:nth-child(even){
+    background-color: var(--zebra);
+}
