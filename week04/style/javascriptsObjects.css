@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    margin: 1rem auto;
+}
+
+h1{
+    font-family: "Acme", sans-serif;
+    border-bottom: 1px solid #bbb;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+th, td{
+    padding: 0.7rem;
+    text-align: center;
+}
+
+th{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(odd){
+    background-color: #bed;
+}
+
+tr:hover{
+    background-color: #ace;
+}
+
+caption{
+    caption-side: top;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: .5rem;
+}

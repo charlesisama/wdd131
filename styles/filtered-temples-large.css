@@ -1,0 +1,37 @@
+@media (min-width: 37.2em) {
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    header p {
+    font-size: 3rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        width: auto;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .navigation li a {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    .figure-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+}

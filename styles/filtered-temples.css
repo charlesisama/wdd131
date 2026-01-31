@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-background-color: rgb(79, 12, 142);
+    --heading-text-color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p {
+    font-size: 2rem;
+    font-family: times, serif;
+}
+
+/* HAMBURGER */
+#menu {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: var(--heading-text-color);
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+/* NAVIGATION */
+nav {
+    /* position: absolute;
+    top: 4rem;
+    left: 0; */
+    display: flex;
+    width: 100%;
+}
+
+.navigation {
+    list-style: none;
+    background-color: var(--heading-background-color);
+}
+
+.navigation li a {
+    display: none;
+    color: var(--heading-text-color);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navigation li a:hover {
+    background: var(--heading-text-color);
+    color:var(--heading-background-color);
+    border-radius: .5rem;
+}
+
+.navigation.open li a {
+    display: block;
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1{
+    text-align: center;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.figure-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    color: var(--heading-background-color);
+    margin-top: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    min-height: 1.5rem;
+}
+
+.label{
+    font-size: bold;
+    color: var(--heading-background-color);
+    text-align: right;
+}
