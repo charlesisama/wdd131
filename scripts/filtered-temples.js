@@ -84,7 +84,7 @@ const temples = [
     dedicated: "1893, April, 24",
     area: 382207,
     imageUrl:
-    "https://churchofjesuschristtemples.org/salt-lake-temple/photographs/"
+    "images/salt-lake-temple.webp"
   },
    {
     templeName: "Salta Argetina",
@@ -92,7 +92,7 @@ const temples = [
     dedicated: "2024, June, 16",
     area: 27000,
     imageUrl:
-    "https://churchofjesuschristtemples.org/salt-lake-temple/photographs/"
+    "images/salta-argetina-temple.webp"
   },
   {
     templeName: "Bern Switzerland",
@@ -100,7 +100,7 @@ const temples = [
     dedicated: "1955, September, 15",
     area: 35546,
     imageUrl:
-    "https://churchofjesuschristtemples.org/salt-lake-temple/photographs/"
+    "images/bern-switzerland-temple.webp"
   },
   
 ];
@@ -181,17 +181,30 @@ function createTempleCard (filteredTemples){
     img.setAttribute("alt", `${temple.templeName} temple`);
     img.setAttribute("loading", "lazy");
 
+    const textGroup = document.createElement("div");
+    textGroup.classList.add("temple-info");
 
-    card.appendChild(name);
-    card.appendChild(location);
-    card.appendChild(dedication);
-    card.appendChild(area);
+    textGroup.appendChild(name);
+    textGroup.appendChild(location);
+    textGroup.appendChild(dedication);
+    textGroup.appendChild(area);
+
+    card.appendChild(textGroup);
     card.appendChild(img);
+
 
     document.querySelector(".figure-grid").appendChild(card);
   });
 }
 
 
+//Reset Home
+const homeLink = document.querySelector("#home");
+
+homeLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  pageTitle.textContent = "Home";
+  createTempleCard(temples);
+});
 
     

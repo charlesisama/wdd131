@@ -34,4 +34,15 @@
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 1.5rem;
     }
+
+    .figure-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .figure-grid section {
+    height: 100%;
+  }
 }

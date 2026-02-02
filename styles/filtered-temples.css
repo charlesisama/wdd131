@@ -120,14 +120,30 @@ figure img {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   width:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* key line */
+  height: 100%;
+
+}
+
+.temple-info {
+  flex-grow: 1;   /* absorbs extra text height */
+}
+
+section img {
+  margin-top: 1rem;
 }
 
 
-section p{
-    text-align: left;
-    padding: .2rem;
-    width:max-content;
+section p {
+  text-align: left;
+  padding: .2rem;
+  width: 100%;            
+  overflow-wrap: anywhere; 
+  word-break: break-word;   
 }
+
 
 section img{
     width: 100%;
