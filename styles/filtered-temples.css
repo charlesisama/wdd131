@@ -96,21 +96,6 @@ h1{
     gap: 1rem;
 }
 
-/* figure {
-    text-align: center;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-} */
-
-/* figcaption {
-    color: var(--heading-background-color);
-    margin-top: 0.5rem;
-} */
-
 
 .figure-grid section {
   border: 1px solid var(--heading-background-color); 
@@ -122,13 +107,13 @@ figure img {
   width:auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* key line */
+  justify-content: space-between;
   height: 100%;
 
 }
 
 .temple-info {
-  flex-grow: 1;   /* absorbs extra text height */
+  flex-grow: 1;  
 }
 
 
@@ -151,6 +136,7 @@ section img{
 
 /* FOOTER */
 footer {
+   
     background-color: var(--heading-background-color);
     color: var(--heading-text-color);
     text-align: center;
