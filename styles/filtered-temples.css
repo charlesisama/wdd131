@@ -96,7 +96,7 @@ h1{
     gap: 1rem;
 }
 
-figure {
+/* figure {
     text-align: center;
 }
 
@@ -104,11 +104,36 @@ figure img {
     width: 100%;
     height: auto;
     display: block;
-}
+} */
 
-figcaption {
+/* figcaption {
     color: var(--heading-background-color);
     margin-top: 0.5rem;
+} */
+
+
+.figure-grid section {
+  border: 1px solid var(--heading-background-color); 
+  border-radius: 10px;         
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width:auto;
+}
+
+
+section p{
+    text-align: left;
+    padding: .2rem;
+    width:max-content;
+}
+
+section img{
+    width: 100%;
+    height: auto;
+    display:block;
+
 }
 
 /* FOOTER */
@@ -125,7 +150,7 @@ footer p {
 }
 
 .label{
-    font-size: bold;
+    font-weight: bold;
     color: var(--heading-background-color);
     text-align: right;
 }

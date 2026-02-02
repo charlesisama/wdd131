@@ -105,10 +105,66 @@ const temples = [
   
 ];
 
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard (temple){
-  temples.forEach(temple => {
+let oldTemples = document.querySelector("#old");
+let newTemples = document.querySelector("#new");
+let smallTemples = document.querySelector("#small");
+let largeTemples = document.querySelector("#large");
+
+const pageTitle = document.querySelector("h1");
+
+
+
+
+//Event for Old
+oldTemples.addEventListener("click", () =>{
+
+  pageTitle.textContent = "Old";
+  
+  const filteredOld = temples.filter(temple => {
+
+  const year = parseInt(temple.dedicated.split(",")[0]);
+  return year < 1900; 
+  });
+
+  createTempleCard(filteredOld); 
+
+   });
+
+newTemples.addEventListener("click", () =>{
+
+  pageTitle.textContent = "New";
+  
+  const filteredNew = temples.filter(temple => {
+
+  const year = parseInt(temple.dedicated.split(",")[0]);
+  return year > 2000; 
+  });
+
+  createTempleCard(filteredNew); 
+
+   });
+
+// SMALL: area < 10000
+smallTemples.addEventListener("click", () => {
+  pageTitle.textContent = "Small";
+  createTempleCard(temples.filter(t => t.area < 10000));
+});
+
+// LARGE: area > 90000
+largeTemples.addEventListener("click", () => {
+  pageTitle.textContent = "large";
+  createTempleCard(temples.filter(t => t.area > 90000));
+});
+
+
+
+
+function createTempleCard (filteredTemples){
+  document.querySelector(".figure-grid").innerHTML = "";
+
+  filteredTemples.forEach(temple => {
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");
@@ -136,6 +192,6 @@ function createTempleCard (temple){
   });
 }
 
-//filter
+
 
     
