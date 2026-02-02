@@ -131,10 +131,6 @@ figure img {
   flex-grow: 1;   /* absorbs extra text height */
 }
 
-section img {
-  margin-top: 1rem;
-}
-
 
 section p {
   text-align: left;
@@ -146,6 +142,7 @@ section p {
 
 
 section img{
+    margin-top: 1rem;
     width: 100%;
     height: auto;
     display:block;
