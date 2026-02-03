@@ -57,10 +57,13 @@ nav {
 .navigation {
     list-style: none;
     background-color: var(--heading-background-color);
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+    max-height: 0;
 }
 
 .navigation li a {
-    display: none;
+    display: block;
     color: var(--heading-text-color);
     text-decoration: none;
     padding: 1rem;
@@ -72,6 +75,11 @@ nav {
     color:var(--heading-background-color);
     border-radius: .5rem;
 }
+
+.navigation.navigation.open{
+    max-height: 400px;
+}
+
 
 .navigation.open li a {
     display: block;
@@ -126,11 +134,13 @@ section p {
 }
 
 
-section img{
+.figure-grid section img{
     margin-top: 1rem;
     width: 100%;
     height: auto;
     display:block;
+    object-fit: cover;
+    aspect-ratio: 16 / 10;
 
 }
 
@@ -152,4 +162,57 @@ footer p {
     font-weight: bold;
     color: var(--heading-background-color);
     text-align: right;
+    display: inline-block;
+   
+}
+
+
+
+/* larger screen */
+
+@media (min-width: 37.2em) {
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    header p {
+    font-size: 3rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        width: auto;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+        max-height: none;
+        overflow: visible;
+    }
+
+
+    .navigation li a {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    .figure-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+
+ 
+
+  .figure-grid section {
+    height: 100%;
+  }
 }

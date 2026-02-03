@@ -162,7 +162,7 @@ largeTemples.addEventListener("click", () => {
 
 
 function createTempleCard (filteredTemples){
-  document.querySelector(".figure-grid").innerHTML = "";
+  document.querySelector(".figure-grid").textContent = "";
 
   filteredTemples.forEach(temple => {
     let card = document.createElement("section");
@@ -177,11 +177,22 @@ function createTempleCard (filteredTemples){
     location.innerHTML = `<span class = "label">Location:</span> ${temple.location}`;
     dedication.innerHTML = `<span class = "label">Dedicated:</span> ${temple.dedicated}`;
     area.innerHTML = `<span class = "label">Area:</span> ${temple.area} sq ft`;
-    img.setAttribute("src", temple.imageUrl);
-    img.setAttribute("alt", `${temple.templeName} temple`);
-    img.setAttribute("loading", "lazy");
-    img.setAttribute("width", 400);
-    img.setAttribute("height", 250);
+
+    img.src = temple.imageUrl;
+    img.alt = `${temple.templeName} temple`;
+    img.loading = "lazy";
+    img.width = 400;
+    img.height = 250;
+
+    filteredTemples.forEach ((temple, index) => {
+      if (index < 1){
+        img.loading = "eager";
+        img.fetchPriority = "high";
+      }
+      else{
+        img.loading = "lazy";
+      }
+    });
 
 
     const textGroup = document.createElement("div");
@@ -200,7 +211,6 @@ function createTempleCard (filteredTemples){
   });
 }
 
-
 //Reset Home
 const homeLink = document.querySelector("#home");
 
@@ -209,5 +219,3 @@ homeLink.addEventListener("click", (e) => {
   pageTitle.textContent = "Home";
   createTempleCard(temples);
 });
-
-    
