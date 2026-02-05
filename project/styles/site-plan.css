@@ -154,13 +154,13 @@ a:focus-visible {
 }
 
 
-.swatches {
+.colors {
   display: grid;
   gap: 0.8rem;
   margin: 0.7rem 0 1.2rem;
 }
 
-.swatch {
+.color {
   display: grid;
   grid-template-columns: 46px 1fr;
   gap: 0.8rem;
@@ -177,12 +177,20 @@ a:focus-visible {
   border-radius: 12px;
 }
 
-.swatch-title {
+.chip.primary{
+    background: var(--primary);
+}
+
+.chip.secondary{
+     background: var(--secondary);
+}
+
+.color-title {
   margin: 0;
   font-weight: 700;
 }
 
-.swatch-meta {
+.color-meta {
   margin: 0;
   opacity: 0.85;
 }
