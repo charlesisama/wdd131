@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Site Plan | Explore Nigeria - Charles Isama</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamental- Temples Responsive Page">
+        <meta name="author" content="Charles Isama">
+        <link rel="stylesheet" href="styles/site-plan.css">
+
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <div class="brand">
+                    <span class="brand-mark" aria-hidden="true">🟩⬜🟩</span>
+                    <div>
+                        <h1>Explore Nigeria</h1>
+                        <p class="subtitle">WDD 131 - week 5 site Plan</p>
+                    </div>
+                </div>
+
+                <nav class="site-nav" aria-label="Site Plan sections">
+                    <a href="#purpose">Purpose</a>
+                    <a href="#purpose">Audience</a>
+                    <a href="#purpose">Scenarios</a>
+                    <a href="#purpose">Site Map</a>
+                    <a href="#purpose">Branding</a>
+                    <a href="#purpose">Wireframes</a>
+                </nav>
+                
+            </div>
+
+        </header>
+
+        <main class="container">
+            <section class="card" id="purpose">
+                <h2>Site Name</h2>
+                <p><strong>Explore Nigeria</strong></p>
+
+                <h2>Site Purpose</h2>
+                <p>
+                    Expore Nigeria is a Cultural and travel information website that helps visitors 
+                    discover Nigeria's major cities, landmark, and Culturalhighlights. <br>
+                    The site will present featured destinations, quick facts and engaging content
+                    using Responsive design and javascript driven interactions.
+                </p>
+            </section>
+
+            <section class="card" id="audience">
+                <h2>Target Audience</h2>
+                <ul>
+                    <li>Tourist and first-time visitors planning a trip to Nigeria</li>
+                    <li>Nigerians in the diaspora who wants a cultural reference site</li>
+                    <li>Students and curious learners who want a simple overview of Nigeria</li>
+                </ul>
+            </section>
+
+            <section class="card" id="sitemap">
+                    <h2>Site Map </h2>
+                    <div class="sitemap">
+                        <div class="node root">Home</div>
+                        <div class="branches">
+                            <div class="node">Destinations</div>
+                            <div class="node">culture</div>
+                            <div class="node">Travel</div>
+                            <div class="node">Contact</div>
+                        </div>
+                    </div>
+                    <p class="note">
+                        The project will use consistent navigation and the Destinations page will showcase
+                        cards and filtering interactions (js).
+                    </p>
+               
+            </section>
+
+          
+            <section class="card" id="branding">
+                <h2>Color Scheme</h2>
+                <p>Palette inspired by the Nigerian flag and modern UI neutrals.</p>
+
+            <div class="swatches" role="list">
+                <div class="swatch" role="listitem">
+                    <div class="chip" style="background: var(--primary);"></div>
+                    <div>
+                        <p class="swatch-title">Primary</p>
+                        <p class="swatch-meta">Nigeria Green — <code>#008753</code></p>
+                    </div>
+                    </div>
+
+            <div class="swatch" role="listitem">
+                <div class="chip" style="background: var(--secondary);"></div>
+            <div>
+                <p class="swatch-title">Secondary</p>
+                <p class="swatch-meta">Deep Green — <code>#0B3D2E</code></p>
+            </div>
+            </div>
+
+            <div class="swatch" role="listitem">
+            <div class="chip" style="background: var(--accent);"></div>
+            <div>
+                <p class="swatch-title">Accent</p>
+                <p class="swatch-meta">Gold — <code>#F2C14E</code></p>
+            </div>
+            </div>
+
+            <div class="swatch" role="listitem">
+            <div class="chip" style="background: var(--muted); border: 1px solid #ddd;"></div>
+            <div>
+                <p class="swatch-title">Muted Background</p>
+                <p class="swatch-meta">Light Gray — <code>#F3F4F6</code></p>
+            </div>
+            </div>
+
+            <div class="swatch" role="listitem">
+            <div class="chip" style="background: var(--text);"></div>
+            <div>
+                <p class="swatch-title">Text</p>
+                <p class="swatch-meta">Charcoal — <code>#1F2937</code></p>
+            </div>
+            </div>
+        </div>
+
+        <h2>Typography</h2>
+        <div class="type-grid">
+            <div class="type-sample">
+            <h3 class="font-heading">Headings: Poppins</h3>
+            <p class="type-example font-heading">
+                Explore Nigeria — Discover destinations, culture, and travel highlights.
+            </p>
+            </div>
+
+            <div class="type-sample">
+            <h3 class="font-body">Body: Inter</h3>
+            <p class="type-example font-body">
+                Inter supports readable paragraphs, UI labels, and card content across devices.
+            </p>
+            </div>
+        </div>
+        </section>
+
+    
+        <section class="card" id="wireframes">
+        <h2>Wireframes</h2>
+        <p class="note">
+            The diagrams below represent the <strong>Home page layout</strong> in mobile and desktop (wider) views.
+            These are layout guides only.
+        </p>
+
+
+        <div class="wireframe-grid">
+            
+            <article class="wireframe">
+            <header class="wireframe-head">
+                <h3>Mobile View</h3>
+                <p>Single-column layout with stacked sections.</p>
+            </header>
+
+            <div class="wf-box">
+                <div class="wf-row">
+                <div class="wf-block wf-logo">LOGO</div>
+                <div class="wf-block wf-menu">☰</div>
+                </div>
+                <div class="wf-hero">HERO IMAGE</div>
+                <div class="wf-text">Title + Intro</div>
+                <div class="wf-btn">CTA Button</div>
+                <div class="wf-section-title">Featured Highlights</div>
+                <div class="wf-cards one">
+                <div class="wf-card">Card</div>
+                <div class="wf-card">Card</div>
+                <div class="wf-card">Card</div>
+                </div>
+                <div class="wf-section-title">Quick Facts</div>
+                <div class="wf-facts">
+                <div class="wf-pill">Area</div>
+                <div class="wf-pill">Population</div>
+                <div class="wf-pill">Capital</div>
+                <div class="wf-pill">Currency</div>
+                </div>
+                <div class="wf-footer">FOOTER</div>
+            </div>
+            </article>
+
+           
+            <article class="wireframe">
+            <header class="wireframe-head">
+                <h3>Desktop View</h3>
+                <p>Wider layout with hero split and 3-column cards.</p>
+            </header>
+
+            <div class="wf-box">
+                <div class="wf-row wide">
+                <div class="wf-block wf-logo">LOGO</div>
+                <div class="wf-block wf-nav">NAV LINKS</div>
+                </div>
+
+                <div class="wf-hero-split">
+                <div class="wf-hero">HERO IMAGE</div>
+                <div class="wf-side">
+                    <div class="wf-text">Title + Intro</div>
+                    <div class="wf-btn">CTA Button</div>
+                </div>
+                </div>
+
+                <div class="wf-section-title">Featured Highlights</div>
+                <div class="wf-cards three">
+                <div class="wf-card">Card</div>
+                <div class="wf-card">Card</div>
+                <div class="wf-card">Card</div>
+                </div>
+
+                <div class="wf-section-title">Quick Facts Strip</div>
+                <div class="wf-facts strip">
+                <div class="wf-pill">Area</div>
+                <div class="wf-pill">Population</div>
+                <div class="wf-pill">Capital</div>
+                <div class="wf-pill">Currency</div>
+                <div class="wf-pill">Languages</div>
+                </div>
+
+                <div class="wf-footer">FOOTER</div>
+            </div>
+            </article>
+        </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Explore Nigeria — Site Plan</p>
+        <p class="muted">WDD 131</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    </body>
+   
+</html>
