@@ -14,7 +14,7 @@
         <header class="site-header">
             <div class="container header-inner">
                 <div class="brand">
-                    <span class="brand-mark" aria-hidden="true">🟩⬜🟩</span>
+                    <span class="brand-mark">🟩⬜🟩</span>
                     <div>
                         <h1>Explore Nigeria</h1>
                         <p class="subtitle">WDD 131 - week 5 site Plan</p>
@@ -23,11 +23,11 @@
 
                 <nav class="site-nav" aria-label="Site Plan sections">
                     <a href="#purpose">Purpose</a>
-                    <a href="#purpose">Audience</a>
-                    <a href="#purpose">Scenarios</a>
-                    <a href="#purpose">Site Map</a>
-                    <a href="#purpose">Branding</a>
-                    <a href="#purpose">Wireframes</a>
+                    <a href="#audience">Audience</a>
+                    <a href="#scenarios">Scenarios</a>
+                    <a href="#sitemap">Site Map</a>
+                    <a href="#branding">Branding</a>
+                    <a href="#wireframes">Wireframes</a>
                 </nav>
                 
             </div>
@@ -81,47 +81,47 @@
                 <h2>Color Scheme</h2>
                 <p>Palette inspired by the Nigerian flag and modern UI neutrals.</p>
 
-            <div class="colors" role="list">
-                <div class="color" role="listitem">
-                    <div class="chip primary"></div>
+                <div class="colors" role="list">
+                    <div class="color" role="listitem">
+                        <div class="chip primary"></div>
                     <div>
                         <p class="color-title">Primary</p>
                         <p class="color-meta">Nigeria Green — <code>#008753</code></p>
                     </div>
                     </div>
 
-            <div class="color" role="listitem">
-                <div class="chip Secondary"></div>
-            <div>
-                <p class="color-title">Secondary</p>
-                <p class="color-meta">Deep Green — <code>#0B3D2E</code></p>
-            </div>
-            </div>
+                <div class="color" role="listitem">
+                    <div class="chip secondary"></div>
+                <div>
+                    <p class="color-title">Secondary</p>
+                    <p class="color-meta">Deep Green — <code>#0B3D2E</code></p>
+                </div>
+                </div>
 
-            <div class="color" role="listitem">
-            <div class="chip" style="background: var(--accent);"></div>
-            <div>
-                <p class="color-title">Accent</p>
-                <p class="color-meta">Gold — <code>#F2C14E</code></p>
-            </div>
-            </div>
+                <div class="color" role="listitem">
+                <div class="chip accent" ></div>
+                <div>
+                    <p class="color-title">Accent</p>
+                    <p class="color-meta">Gold — <code>#F2C14E</code></p>
+                </div>
+                </div>
 
-            <div class="color" role="listitem">
-            <div class="chip" style="background: var(--muted); border: 1px solid #ddd;"></div>
-            <div>
-                <p class="color-title">Muted Background</p>
-                <p class="color-meta">Light Gray — <code>#F3F4F6</code></p>
-            </div>
-            </div>
+                <div class="color" role="listitem">
+                <div class="chip muted-bg"></div>
+                <div>
+                    <p class="color-title">Muted Background</p>
+                    <p class="color-meta">Light Gray — <code>#F3F4F6</code></p>
+                </div>
+                </div>
 
-            <div class="color" role="listitem">
-            <div class="chip" style="background: var(--text);"></div>
-            <div>
-                <p class="color-title">Text</p>
-                <p class="color-meta">Charcoal — <code>#1F2937</code></p>
+                <div class="color" role="listitem">
+                <div class="chip text"></div>
+                <div>
+                    <p class="color-title">Text</p>
+                    <p class="color-meta">Charcoal — <code>#1F2937</code></p>
+                </div>
+                </div>
             </div>
-            </div>
-        </div>
 
         <h2>Typography</h2>
         <div class="type-grid">
@@ -152,16 +152,17 @@
 
         <div class="wireframe-grid">
             
-            <article class="wireframe">
+            <article class="wireframe"> 
             <header class="wireframe-head">
+
                 <h3>Mobile View</h3>
                 <p>Single-column layout with stacked sections.</p>
             </header>
 
             <div class="wf-box">
                 <div class="wf-row">
-                <div class="wf-block wf-logo">LOGO</div>
-                <div class="wf-block wf-menu">☰</div>
+                    <div class="wf-block wf-logo">LOGO</div>
+                    <div class="wf-block wf-menu">☰</div>
                 </div>
                 <div class="wf-hero">HERO IMAGE</div>
                 <div class="wf-text">Title + Intro</div>
@@ -230,13 +231,8 @@
     <footer class="site-footer">
         <div class="container footer-inner">
         <p>&copy; <span id="year"></span> Explore Nigeria — Site Plan</p>
-        <p class="muted">WDD 131</p>
         </div>
     </footer>
-
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
 
     </body>
    

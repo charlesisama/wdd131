@@ -14,7 +14,7 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .swatches {
+  .colors {
     grid-template-columns: repeat(2, 1fr);
   }
 

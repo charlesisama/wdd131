@@ -185,6 +185,19 @@ a:focus-visible {
      background: var(--secondary);
 }
 
+.chip.accent{
+    background: var(--accent);
+}
+
+.chip.muted-bg{
+    background: var(--muted); 
+    border: 1px solid #ddd;
+}
+
+.chip.text{
+    background: var(--text);
+}
+
 .color-title {
   margin: 0;
   font-weight: 700;
