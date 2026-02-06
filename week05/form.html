@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles Isama">
+    <meta name="description" content="WDD 131- Web Dynamics Fundamentals:Product Review Form">
+    <title>WDD 131 - Dynamic Web Fundamental- Charles Isama</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Review Details</legend>
+            
+
+            <!-- PRODUCT NAME -->
+            <div class="form-item">
+                <label for="productName">Product Name <span class="ast">*</span></label>
+                <select id="productName" name="productName" required>
+                    <option value="" selected disabled> Select a Product...</option>
+                </select>
+            </div>
+
+            <!-- OVRARALL RATING -->
+            <div class="form-item">
+                <p class="label-like">Overall Rating <span class="ast">*</span></p>
+
+                <div class="rating-grid" role="radiogroup">
+                    <label class="ratingOption">
+                        <span class="stars">⁎</span> 
+                        <input class="rating-radio" type="radio" name="rating" value="1" required>
+                    </label>
+
+                    <label class="ratingOption">
+                        <span class="stars">⁎⁎</span> 
+                        <input class="rating-radio" type="radio" name="rating" value="2" required>
+                    </label>
+
+                    <label class="ratingOption">
+                        <span class="stars">⁎⁎⁎</span> 
+                        <input class="rating-radio" type="radio" name="rating" value="3" required>
+                    </label>
+
+                    <label class="ratingOption">
+                        <span class="stars">⁎⁎⁎⁎</span> 
+                        <input class="rating-radio" type="radio" name="rating" value="4" required>
+                    </label>
+
+                    <label class="ratingOption">
+                        <span class="stars">⁎⁎⁎⁎⁎</span> 
+                        <input class="rating-radio" type="radio" name="rating" value="5" required>
+                    </label>
+                    
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- INSTALLATION DATE -->
+            <div class="form-item">
+                <label for="installDate">Date of Installation <span class="ast">*</span></label>
+                <input type="date" id="installDate" name="installDate" required/>
+            </div>
+
+            <!-- FEATURE -->
+            <div class="form-item">
+                <p class="label-like">Useful Features</p>
+
+                <div class="check-grp">
+                    <label><input type="checkbox" name="features" value="durable">Durable </label>
+                    <label><input type="checkbox" name="features" value="easy">Easy to Use </label>
+                    <label><input type="checkbox" name="features" value="performance">Great Performance </label>
+                    <label><input type="checkbox" name="features" value="design">Nice Design </label>
+                </div>
+
+            </div>
+
+            <!-- WRITTEN REVIEW -->
+             <div class="form-item">
+                <label for="reviewText">Written Review</label>
+                <textarea id="Review" name="reviewText" rows="4" placeholder="Share your experience...."></textarea>
+             </div>
+
+             <!-- USERNAME -->
+             <div class="form-item">
+                <label for="userName">Your  Name</label>
+                <input type="text" id="userName" name="userName" autocomplete="name">
+
+             </div>
+
+             </fieldset>
+
+             <!-- SUBMIT BUTTON -->
+              <div class="form-action">
+                <input type="submit" value="submit review" />
+              </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+         <p>
+            © <span id="currentyear"></span> ✨ Charles Edache Isama✨ Nigeria
+        </p>
+        <p id="lastModified"></p>
+
+    </footer>
+</body>
+</html>

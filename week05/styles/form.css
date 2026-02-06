@@ -1,0 +1,154 @@
+:root{
+    --primary-color: hsl(190, 42%, 28%);
+    --secondary-color: #f4f7f8;
+    --accent-color: navy;
+    --text-color: #222;
+    --border-radius: 8px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    line-height: 1.5;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+main{
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.form-item{
+    margin-bottom: 1.4rem;
+}
+
+.label, .label-like{
+    display: block;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,textarea{
+    width: 100%;
+    padding: 0.6rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input.focus,
+select.focus,
+textarea.focus{
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.check-grp{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.rating-grid label, .check-grp label{
+    font-weight: 400;
+}
+
+/* SUBMIT */
+.form-action{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+input[type="submit"]{
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: .8rem, 2rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--accent-color);
+}
+
+
+footer{
+    margin-top: 3rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.rating-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ratingOption{
+   display: grid;
+   grid-template-rows: auto auto;
+   justify-items: start;
+   align-items: start;
+}
+
+.stars{
+    font-size: 1.1rem;
+    letter-spacing: 0.15rem;
+}
+
+.rating-radio{
+    width: auto;
+    margin: 0;
+}
+.ast{
+    color: red;
+}
+
+
+
+/* FOR LARGE SCREENS */
+
+@media (min-width: 700px) {
+    .radio-grp, .check-grp{
+        gap: 2rem;
+    }
+    
+}
