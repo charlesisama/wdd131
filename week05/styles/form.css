@@ -169,6 +169,10 @@ footer{
     text-decoration: underline;
 }
 
+.optional{
+    color: blue;
+}
+
 
 /* FOR LARGE SCREENS */
 
