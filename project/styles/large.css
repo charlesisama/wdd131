@@ -1,0 +1,58 @@
+/* styles/large.css */
+@media (min-width: 800px) {
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand-title {
+    font-size: 1.7rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .site-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.7rem 1rem;
+  }
+
+  .hero {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .facts {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .controls {
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  form.contact-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-form .span-2 {
+    grid-column: span 2;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+}

@@ -1,0 +1,343 @@
+/* styles/base.css */
+
+:root {
+  --primary: #008753;
+  --secondary: #0b3d2e;
+  --accent: #f2c14e;
+  --bg: #ffffff;
+  --muted: #f3f4f6;
+  --text: #1f2937;
+
+  --radius: 14px;
+  --shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+
+  --max: 1100px;
+  --gap: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--muted);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.2;
+  margin: 0.25rem 0 0.6rem;
+}
+
+p {
+  margin: 0.2rem 0 1rem;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.container {
+  width: min(var(--max), 92%);
+  margin: 0 auto;
+}
+
+/* CARDS */
+.card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-top: 6px solid var(--secondary);
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+}
+
+.button:hover,
+.button:focus-visible {
+  filter: brightness(0.95);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(0, 135, 83, 0.12);
+  border: 1px solid rgba(0, 135, 83, 0.25);
+  font-weight: 600;
+}
+
+/* HEADER */
+.site-header {
+  background: var(--secondary);
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-mark {
+  font-size: 1.8rem;
+}
+
+.brand-title {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.brand-subtitle {
+  margin: 0.1rem 0 0;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Mobile nav */
+.nav-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+  border-radius: 12px;
+  padding: 0.55rem 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.site-nav {
+  display: none;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.site-nav.open {
+  display: flex;
+}
+
+.site-nav a {
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  width: fit-content;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  background: rgba(255, 255, 255, 0.22);
+  text-decoration: none;
+}
+
+/* Main sections */
+.hero {
+  display: grid;
+  gap: var(--gap);
+}
+
+.hero-media img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  display: block;
+}
+
+.hero-content .lead {
+  font-size: 1.05rem;
+  opacity: 0.95;
+}
+
+.highlights-grid {
+  display: grid;
+  gap: var(--gap);
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+.fact {
+  background: var(--muted);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 0.8rem;
+}
+
+.fact strong {
+  display: block;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Cards list */
+.controls {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.controls label {
+  font-weight: 700;
+}
+
+.controls .form-field {
+  margin: 0;
+}
+
+#resultsMeta {
+  margin-top: 0.2rem;
+}
+
+
+
+.controls select,
+.controls input[type="search"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid rgba(0,0,0,0.18);
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.cards-grid {
+  display: grid;
+  gap: var(--gap);
+}
+
+.place-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border-top: 6px solid var(--secondary);
+}
+
+.place-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.place-card .content {
+  padding: 1rem;
+}
+
+.place-card .meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.place-card .actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.place-card h3 {
+  margin: 0.2rem 0 0.45rem;
+}
+
+.place-card .actions .button {
+  padding: 0.6rem 0.9rem;
+  font-size: 0.95rem;
+}
+
+
+/* Form */
+form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.form-field {
+  display: grid;
+  gap: 0.4rem;
+}
+
+label {
+  font-weight: 700;
+}
+
+input, select, textarea {
+  padding: 0.75rem;
+  border: 1px solid rgba(0,0,0,0.18);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.help {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.note {
+  background: #fff8e7;
+  border-left: 5px solid var(--accent);
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+.ast{
+  color: red;
+}
+
+/* Footer */
+.site-footer {
+  padding: 1.3rem 0 2rem;
+  color: var(--bg);
+  background-color: var(--primary);
+  text-align: center;
+}
+
+.footer-inner {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.footer-links a {
+  margin-right: 0.8rem;
+  color: var(--bg);
+}

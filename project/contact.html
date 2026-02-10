@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Nigeria | Contact</title>
+  <meta name="description" content="Contact Explore Nigeria. Send feedback, questions, or travel suggestions.">
+  <meta name="author" content="Charles Isama">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark">🟩⬜🟩</span>
+        <div>
+          <h1 class="brand-title">Explore Nigeria</h1>
+          <p class="brand-subtitle">Destinations • Culture • Travel</p>
+        </div>
+      </div>
+
+      <button id="navToggle" class="nav-toggle" type="button">
+        Menu
+      </button>
+
+      <nav id="siteNav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="culture.html">Culture</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Contact</h2>
+      <p class="lead">
+        Send questions, feedback, or travel suggestions. Your message is saved locally as confirmation (no email is sent).
+      </p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-field">
+          <label for="fullName">Full name <span class="ast">*</span></label>
+          <input id="fullName" name="fullName" type="text" autocomplete="name" required>
+          <p class="help">Required.</p>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email<span class="ast">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <p class="help">Required. Example: name@example.com</p>
+        </div>
+
+        <div class="form-field">
+          <label for="topic">Topic<span class="ast">*</span></label>
+          <select id="topic" name="topic" required>
+            <option value="" selected disabled>Select a topic</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Question">Question</option>
+            <option value="Suggestion">Suggestion</option>
+            <option value="Report an issue">Report an issue</option>
+          </select>
+          <p class="help">Required.</p>
+        </div>
+
+        <div class="form-field">
+          <label for="region">Region of interest<span class="ast">*</span></label>
+          <select id="region" name="region" required>
+            <option value="" selected disabled>Select a region</option>
+            <option value="North Central">North Central</option>
+            <option value="North East">North East</option>
+            <option value="North West">North West</option>
+            <option value="South East">South East</option>
+            <option value="South South">South South</option>
+            <option value="South West">South West</option>
+          </select>
+          <p class="help">Required.</p>
+        </div>
+
+        <div class="form-field span-2">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <p class="help">Required. Minimum 15 characters.</p>
+        </div>
+
+        <div class="form-field span-2">
+          <label>
+            <input id="consent" name="consent" type="checkbox" required>
+            I confirm this message is respectful and appropriate.<span class="ast">*</span>
+          </label>
+          <p class="help">Required.</p>
+        </div>
+
+        <div class="form-field span-2">
+          <button class="button" type="submit">Submit Message</button>
+        </div>
+
+        <p id="formStatus" class="help span-2" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="confirmation" class="card" hidden>
+      <h2>Message Received</h2>
+      <p id="confirmText" class="lead"></p>
+
+      <div class="facts">
+        <div class="fact"><strong>Topic</strong><span id="cTopic"></span></div>
+        <div class="fact"><strong>Region</strong><span id="cRegion"></span></div>
+        <div class="fact"><strong>Messages sent</strong><span id="cCount"></span></div>
+        <div class="fact"><strong>Saved</strong><span id="cSaved"></span></div>
+      </div>
+
+      <p class="help">
+        Note: This is a course project demo. Data is stored locally using <code>localStorage</code>.
+      </p>
+    </section>
+  </main>
+
+   <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Explore Nigeria — © <span id="currentyear"> </span> ✨ Charles Edache Isama✨ Nigeria</p>
+        
+      <p class="footer-links">
+        <a href="references.html"><strong>References</strong></a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

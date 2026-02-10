@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Nigeria | Destinations</title>
+  <meta name="description" content="Browse Nigerian destinations. Filter by region/type, search, and save favorites.">
+  <meta name="author" content="Charles Isama">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+  <script src="scripts/destinations.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark">🟩⬜🟩</span>
+        <div>
+          <h1 class="brand-title">Explore Nigeria</h1>
+          <p class="brand-subtitle">Destinations • Culture • Travel</p>
+        </div>
+      </div>
+
+      <button id="navToggle" class="nav-toggle" type="button">
+        Menu
+      </button>
+
+      <nav id="siteNav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" aria-current="page">Destinations</a>
+        <a href="culture.html">Culture</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Destinations</h2>
+      <p class="lead">
+        Filter places by region and type, search by name, and save your favorites. Your selections are stored on this device.
+      </p>
+
+      <div class="controls">
+        <div class="form-field">
+          <label for="region">Region</label>
+          <select id="region" name="region">
+            <option value="all">All regions</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="type">Type</label>
+          <select id="type" name="type">
+            <option value="all">All types</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="search">Search</label>
+          <input id="search" name="search" type="search" placeholder="e.g., Lagos, Zuma, Olumo" autocomplete="off">
+          <p class="help">Tip: Search matches name, city, and tags.</p>
+        </div>
+
+        <div class="form-field">
+          <label for="view">View</label>
+          <select id="view" name="view">
+            <option value="all">All destinations</option>
+            <option value="favorites">Favorites only</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <button id="reset" class="button" type="button">Reset Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 id="resultsTitle">Results</h2>
+      <p id="resultsMeta" class="help"></p>
+      <div id="cards" class="cards-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Explore Nigeria — © <span id="currentyear"> </span> ✨ Charles Edache Isama✨ Nigeria</p>
+        
+      <p class="footer-links">
+        <a href="references.html"><strong>References</strong></a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
