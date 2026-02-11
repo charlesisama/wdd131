@@ -328,7 +328,7 @@ textarea {
 .site-footer {
   padding: 1.3rem 0 2rem;
   color: var(--bg);
-  background-color: var(--primary);
+  background-color: var(--secondary);
   text-align: center;
 }
 
