@@ -38,7 +38,7 @@
         <a href="index.html">Home</a>
         <a href="destinations.html">Destinations</a>
         <a href="culture.html">Culture</a>
-        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -53,7 +53,7 @@
       <form id="contactForm" class="contact-form" novalidate>
         <div class="form-field">
           <label for="fullName">Full name <span class="ast">*</span></label>
-          <input id="fullName" name="fullName" type="text" autocomplete="name" required>
+          <input id="fullName" name="fullName" type="text" autocomplete="name" required placeholder="Musa Femi Emeka">
           <p class="help">Required.</p>
         </div>
 
@@ -91,7 +91,7 @@
 
         <div class="form-field span-2">
           <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
+          <textarea id="message" name="message" required placeholder="Write your message..."></textarea>
           <p class="help">Required. Minimum 15 characters.</p>
         </div>
 
@@ -122,7 +122,7 @@
         <div class="fact"><strong>Saved</strong><span id="cSaved"></span></div>
       </div>
 
-      <p class="help">
+      <p class="help note">
         Note: This is a course project demo. Data is stored locally using <code>localStorage</code>.
       </p>
     </section>
