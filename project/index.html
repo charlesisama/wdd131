@@ -34,8 +34,9 @@
 
       <nav id="siteNav" class="site-nav">
         <a href="index.html">Home</a>
-        <a href="destinations.html">Destinations</a>
         <a href="culture.html">Culture</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="travel.html">Travel Advisory</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
@@ -45,7 +46,20 @@
     <section class="card hero">
       <div class="hero-media">
         
-        <img src="images/hero-image.webp" width="1200" height="700" loading="lazy" alt="A scenic view representing Nigeria’s travel destinations.">
+        <!-- <img src="images/hero-image.webp" width="1200" height="700" loading="lazy" alt="A scenic view representing Nigeria’s travel destinations."> -->
+        <img
+          src="images/hero-image.webp"
+          srcset="
+            images/hero-image-small.webp 480w,
+            images/hero-image-medium.webp 800w,
+            images/hero-image.webp 1200w
+          "
+          sizes="(min-width: 64em) 1200px, (min-width: 40em) 800px, 92vw"
+          width="1200"
+          height="700"
+          loading="eager"
+          alt="A scenic view representing Nigeria’s travel destinations.">
+
       </div>
 
       <div class="hero-content">

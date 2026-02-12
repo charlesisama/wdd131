@@ -107,9 +107,23 @@ function cardTemplate(place, isFav) {
   const favText = isFav ? "Remove Favorite" : "Save Favorite";
   const favBadge = isFav ? `<span class="badge">★ Favorite</span>` : "";
 
+  const img = place.image;
+
   return `
     <article class="place-card">
-      <img src="${place.image}" alt="${place.alt}" loading="lazy" width="900" height="600">
+      <img
+        src="${img.large}"
+        srcset="
+          ${img.small} 320w,
+          ${img.medium} 600w,
+          ${img.large} 900w
+        "
+        sizes="(min-width: 64em) 300px, (min-width: 40em) 45vw, 90vw"
+        alt="${place.alt}"
+        loading="lazy"
+        width="900"
+        height="600"
+      >
       <div class="content">
         <div class="meta">
           <span class="badge">${place.region}</span>
