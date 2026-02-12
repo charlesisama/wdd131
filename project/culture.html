@@ -46,8 +46,18 @@
   <main class="container">
     <section class="card hero">
       <div class="hero-media">
-        <img src="images/culture-hero.webp" width="1200" height="700" loading="lazy"
-             alt="A cultural scene representing Nigerian arts, traditions, and community.">
+         <img
+          src="images/culture-hero.webp"
+          srcset="
+            images/culture-hero-small.webp 480w,
+            images/culture-hero-medium.webp 800w,
+            images/culture-hero.webp 1200w
+          "
+          sizes="(min-width: 64em) 1200px, (min-width: 40em) 800px, 92vw"
+          width="1200"
+          height="700"
+          loading="eager"
+          alt="A cultural scene representing Nigerian arts, traditions, and community.">
       </div>
 
       <div class="hero-content">
@@ -110,7 +120,7 @@
         </article>
       </div>
       <p class="help note">
-        Tip: Take time to observe before participating in cultural events—understanding the context of traditions, greetings, and dress codes helps you show respect and build meaningful connections.
+        Tip: Take time to observe before participating in cultural events, understanding the context of traditions, greetings, and dress codes helps you show respect and build meaningful connections.
       </p>
     </section>
 
