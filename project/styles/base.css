@@ -4,7 +4,6 @@
   --primary: #008753;
   --secondary: #0b3d2e;
   --accent: #f2c14e;
-  --bg: #ffffff;
   --muted: #f3f4f6;
   --text: #1f2937;
 
@@ -55,7 +54,7 @@ a:focus-visible {
 
 /* CARDS */
 .card {
-  background: var(--bg);
+  background: #fff;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 1.2rem;
@@ -87,6 +86,10 @@ a:focus-visible {
   background: rgba(0, 135, 83, 0.12);
   border: 1px solid rgba(0, 135, 83, 0.25);
   font-weight: 600;
+}
+
+.cform{
+  background-color: var(--muted);
 }
 
 /* HEADER */
@@ -239,7 +242,7 @@ a:focus-visible {
 }
 
 .place-card {
-  background: var(--bg);
+  background: #fff;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -327,7 +330,7 @@ textarea {
 /* Footer */
 .site-footer {
   padding: 1.3rem 0 2rem;
-  color: var(--bg);
+  color: #fff;
   background-color: var(--secondary);
   text-align: center;
 }
@@ -339,5 +342,5 @@ textarea {
 
 .footer-links a {
   margin-right: 0.8rem;
-  color: var(--bg);
+  color: #fff;
 }
