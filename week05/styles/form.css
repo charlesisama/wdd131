@@ -38,13 +38,9 @@ form{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-fieldset{
-    border: none;
-    padding: 0;
-    margin: 0;
-}
 
-legend{
+
+h2{
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
