@@ -12,8 +12,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
+  <link
+  rel="preload"
+  as="image"
+  href="images/hero-image-medium.webp"
+  imagesrcset="images/hero-image-small.webp 480w, images/hero-image-medium.webp 800w, images/hero-image.webp 1200w"
+  imagesizes="(min-width: 64em) 1200px, (min-width: 40em) 800px, 92vw">
+
+
   <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/large.css">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 800px)">
+
   <script src="scripts/main.js" defer></script>
 </head>
 
@@ -28,9 +37,10 @@
         </div>
       </div>
 
-      <button id="navToggle" class="nav-toggle" type="button">
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="siteNav" aria-expanded="false">
         Menu
       </button>
+
 
       <nav id="siteNav" class="site-nav">
         <a href="index.html">Home</a>
@@ -58,7 +68,11 @@
           width="1200"
           height="700"
           loading="eager"
-          alt="A scenic view representing Nigeria’s travel destinations.">
+          alt="A scenic view representing Nigeria’s travel destinations."
+          fetchpriority="high"
+          decoding="async">
+         
+
 
       </div>
 
